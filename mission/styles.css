@@ -17,6 +17,8 @@ h1 {
     letter-spacing: 15%;
     color: rgb(6, 141, 141);
     border-bottom: solid rgba(6, 141, 141, 0.212) 1px;
+    margin-top: -10px;
+    margin-bottom: 40px;
 }
 
 p, li {
@@ -24,7 +26,7 @@ p, li {
 }
 
 li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 img {
