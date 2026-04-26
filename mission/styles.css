@@ -1,0 +1,36 @@
+#whole {
+    width: 490px;
+    padding: 40px 130px;
+    border: solid rgba(128, 128, 128, 0.425) 1px;
+    margin: 50px auto 0px auto;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 5%;
+    font-size: 240%;
+    font-weight: 500;
+}
+
+#place {
+    text-align: center;
+    letter-spacing: 15%;
+    color: rgb(6, 141, 141);
+    border-bottom: solid rgba(6, 141, 141, 0.212) 1px;
+}
+
+p, li {
+    line-height: 150%;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+img {
+    width: 30%;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-self: center;
+}
