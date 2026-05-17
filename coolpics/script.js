@@ -22,7 +22,7 @@ modal.addEventListener('click', (event) => {
     }
 });
 
-menu.addEventListener('click', openMenu)
+menu.addEventListener('click', openMenu) // error with this because it will effect the nav display on desktop view
 
 function openMenu(e) {
     let navList = document.querySelector('#navlist');
