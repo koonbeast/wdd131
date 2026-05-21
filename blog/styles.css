@@ -1,0 +1,58 @@
+:root {
+    --border-line-color: rgba(226, 185, 0, 0.822);
+    --red-font: rgb(184, 0, 0);
+}
+
+* {
+    box-sizing: none;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 1.5fr 1fr 1fr;
+}
+
+body {
+    border: solid 1px;
+    margin: 2em;
+    border-bottom: solid 3px;
+    border-right: solid 2px;
+    padding: .2em;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+h1 {
+    justify-self: center;
+    padding: 15px;
+}
+
+nav {
+    border-top: solid var(--border-line-color);
+    border-bottom: solid var(--border-line-color);   
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    padding-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--red-font);
+}
+
+.emptySection {
+    border-bottom: solid var(--border-line-color);
+    color: white;
+}
+
+footer {
+    border-top: solid var(--border-line-color);
+}
