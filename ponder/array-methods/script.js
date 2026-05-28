@@ -42,3 +42,18 @@ const new2Array = listedArray.filter((element) => {
 console.log(new2Array)
 
 // use .reduce and .thelastone
+// update, I don't think there is a ".thelastone"
+// in the JS Topics - Arrays, there are only the 4, ending with return(), and there isn't anything explicitly mentioned on https://wddbyui.github.io/wdd131/ponder/ponder_wk6a.html
+
+const new3Array = studentGrades.reduce(totalGrade);
+function totalGrade(total, classGrade) {
+    return total + classGrade;
+};
+const avgGrade = new3Array/studentGrades.length
+console.log(new3Array);
+console.log(studentGrades.length);
+console.log(avgGrade);
+
+console.log(listedArray.thelastone)
+
+console.log("I don't think there is a '.thelastone' in the JS Topics - Arrays, there are only the 4, ending with return(), and there isn't anything explicitly mentioned on https://wddbyui.github.io/wdd131/ponder/ponder_wk6a.html")
