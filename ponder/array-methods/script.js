@@ -54,6 +54,9 @@ console.log(new3Array);
 console.log(studentGrades.length);
 console.log(avgGrade);
 
-console.log(listedArray.thelastone)
+// nevermind, i found it
 
-console.log("I don't think there is a '.thelastone' in the JS Topics - Arrays, there are only the 4, ending with return(), and there isn't anything explicitly mentioned on https://wddbyui.github.io/wdd131/ponder/ponder_wk6a.html")
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let index = fruits.indexOf("Apple");
+console.log(fruits)
+console.log(index)
