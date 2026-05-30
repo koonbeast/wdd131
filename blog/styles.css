@@ -70,7 +70,7 @@ main {
 
 .details {
     text-align: end;
-    margin-top: -35px;
+    margin-top: 35px;
     margin-bottom: 20px;
 }
 
@@ -105,6 +105,10 @@ footer {
         justify-self: auto;
         margin-left: 0;
     }
+
+    .details {
+        border-top: solid black 2px;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -112,9 +116,10 @@ footer {
         min-width: 890px;
     }
 
-    main {
+    div {
         display: grid;
         grid-template-columns: 1fr 2fr;
+        gap: 80px;
     }
 
     .details {
