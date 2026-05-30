@@ -100,7 +100,7 @@ footer {
     text-align: center;
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 980px /*530px*/ ) {
     body {
         justify-self: auto;
         margin-left: 0;
@@ -111,7 +111,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 980px /*800px*/) {
     body {
         min-width: 890px;
     }
