@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Form</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header></header>
+
+
+    <main>
+        <h1>Event Ticket</h1>
+        <form>
+
+            <div class="field">
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text" required>
+            </div>
+
+            <div class="field">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" required>
+            </div>
+
+            <div class="field full">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="field">
+                <label for="type">Type</label>
+                <select name="type" id="type" required>
+                    <option value="">Choose one</option>
+                    <option value="student">Student</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="eventDate">Event Date</label>
+                <input type="date" name="eventDate" id="eventDate" required>
+            </div>
+
+            <div id="typeStudent" class="field full" hidden>
+                <label for="student">Student I#</label>
+                <input type="text" name="student" id="student">
+            </div>
+            <div id="typeGuest" class="field full" hidden>
+                <label for="guest">Access Code</label>
+                <input type="text" name="guest" id="guest">
+            </div>
+
+            <button class="full" type="submit">Create Ticket</button>
+
+        </form>
+
+        <section id="output" aria-live="polite"></section>
+
+    </main>
+
+
+    <footer></footer>
+</body>
+</html>
