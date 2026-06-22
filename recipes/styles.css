@@ -14,6 +14,10 @@
   font-style: normal;
 }
 
+body {
+    margin: 10%;
+}
+
 
 main {
     display: flex;
@@ -37,10 +41,12 @@ main {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+    min-width: fit-content;
 }
 
 .recipe-image {
     max-width: 400px;
+    margin: 10px;
 }
 
 .recipe-card-contents {
@@ -73,6 +79,10 @@ button img {
 }
 
 
+.description {
+    display: none;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -89,10 +99,6 @@ footer {
     width: 50px;
 }
 
-.description {
-    display: none;
-}
-
 @media screen and (min-width: 600px) {
     .recipe-card {
         width: 80%;
@@ -103,5 +109,12 @@ footer {
     }
     .description {
         display: block;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer a {
+        order: -1;
     }
 }
