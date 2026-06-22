@@ -26,8 +26,32 @@ main {
     max-width: 100px;
 }
 
-.recipe-card img {
-    max-width: 500px;
+#search-area {
+    
+}
+
+.recipe-card {
+    border: solid black 2px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-image {
+    max-width: 400px;
+}
+
+.recipe-card-contents {
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-card button {
+    width: 60px;
+    height: 20px;
+    margin: 10px;
 }
 
 section {
@@ -63,4 +87,21 @@ footer {
 
 .social img {
     width: 50px;
+}
+
+.description {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .recipe-card {
+        width: 80%;
+        flex-direction: row;
+    }
+    .recipe-card button {
+        margin-top: 10px;
+    }
+    .description {
+        display: block;
+    }
 }
