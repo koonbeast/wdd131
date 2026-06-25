@@ -25,7 +25,30 @@ console.log(hikes1.sort())
 console.log(ages.sort())
 console.log(people.sort(sortPeople))
 
+const searchButton = document.querySelector(".enterSearch");
+searchButton.addEventListener("click", e => {
+  console.log("you clicked me!")
+  const userInput = document.getElementById("search").value.toLowerCase()
+  console.log(userInput.value)
 
+  const filteredHikes = hikes.filter(hike => {
+    return hike.name.toLowerCase().includes(userInput) ||
+    hike.description.toLowerCase().includes(userInput)
+  })
+  console.log(filteredHikes)
+
+  filteredHikes.sort(sortHikesByDifficulty)
+  function sortHikesByDifficulty(a, b) {
+    if(a.difficulty < b.difficulty) {
+      return -1
+    }
+    else if(a.difficulty > b.difficulty) {
+      return 1
+    }
+    else return 0
+  }
+  console.log(filteredHikes)
+})
 
 const hikes = [
   {
