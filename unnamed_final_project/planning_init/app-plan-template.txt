@@ -6,29 +6,32 @@ WDD 131
 Purpose
 [This website is to provide an easily accessible database from anywhere for personal use. It will serve as a personal list made from user input. The input will only be saved for individual users who have access through their login credentials. Users can save titles and artists, and always be able to come back to see the things they've saved. There will be a shown list and a counter of how many rows of information has been saved. The user can also search or filter their entries in the list.]
 Audience
-[Music lovers and individuals who don't want to lose a song they really enjoyed.]
+[Music lovers and individuals who don't want to lose a song they really enjoyed or want to save to listen to another time.]
 
 Dynamic elements
-[Describe dynamic elements provided by Javascript here]
+[Ability to add information to a main list and the list updates with the information. A counter of how many entries are on the list. The entry form, specifically the name input box, also acts as a search to filter and update the list to see if the name already exists in the list. Any other javascript will be secondary to the idea.]
 
 Branding
-Website Logo
-Logo image
+Website Logo: Song Saver
+Logo image: TBD, related to SS acronym
 Style Guide
+
 Color Palette
 Palette URL: https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c
-Primary	Secondary	Accent 1	Accent 2
-[#396E94]	[#E7C24F]	[#A43312]	
+Primary	Secondary	Accent 1	Accent 2    etc.
+[#1D3649] - Deep Space Blue	[#49301D] - Deep Walnut	[#AA7044] - Cinnamon Wood [#874565]	- Vintage Berry [#458767] - Jungle Teal
+
 Typography
-Heading Font: [Font Name here]
-Paragraph Font: [Font Name here]
+Heading Font: [Vast Shadow]
+Paragraph Font: [Cantarell]
+
 Normal paragraph example
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.}
 
 Colored paragraph example
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.}
 
-Navigation
+Navigation {none so far}
 Home Page2 Page3
 Content
 Home page
