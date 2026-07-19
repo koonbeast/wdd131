@@ -19,7 +19,11 @@ Style Guide
 Color Palette
 Palette URL: https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c
 Primary	Secondary	Accent 1	Accent 2    etc.
-[#1D3649] - Deep Space Blue	[#49301D] - Deep Walnut	[#AA7044] - Cinnamon Wood [#874565]	- Vintage Berry [#458767] - Jungle Teal
+[#1D3649] - Deep Space Blue	
+[#49301D] - Deep Walnut
+[#AA7044] - Cinnamon Wood
+[#874565]	- Vintage Berry 
+[#458767] - Jungle Teal
 
 Typography
 Heading Font: [Vast Shadow]

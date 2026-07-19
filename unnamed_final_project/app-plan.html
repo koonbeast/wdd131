@@ -5,58 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Song Saver</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header></header>
-    <main>
-
+    <header>
         <h1>Song Saver</h1>
         <h2>Start saving songs!</h2>
+    </header>
+    <main>
 
         <div id="full">
 
             <section id="songInput">
                 <form action="">
                     <div>
-                        <label for=""></label>
-                        <input type="text" name="imageUpload" id="">
+                        <input type="file" name="imageUpload" id="imageUpload" accept="image/*">
+                        <label for="imageUpload">- Image</label>
                     </div>
                     <div>
-                        <label for=""></label>
-                        <input type="text" name="artist" id="">
+                        <input type="text" name="artist" id="artist" required>
+                        <label for="artist">- Artist</label>
                     </div>
                     <div>
-                        <label for=""></label>
-                        <input type="text" name="featured" id="">
+                        <input type="text" name="name" id="name">
+                        <label for="name">- Song Name</label>
                     </div>
                     <div>
-                        <label for=""></label>
-                        <input type="text" name="coverArtist" id="">
+                        <input type="text" name="featured" id="featured">
+                        <label for="featured">- Featured Artist</label>
                     </div>
                     <div>
-                        <label for=""></label>
-                        <input type="text" name="name" id="">
+                        <input type="text" name="coverArtist" id="coverArtist">
+                        <label for="coverArtist">- Cover Artist</label>
                     </div>
                     <div>
-                        <label for=""></label>
-                        <input type="text" name="notesOther" id="">
+                        <input type="text" name="notesOther" id="notesOther">
+                        <label for="notesOther">- Notes</label>
+                    </div>
+                    <div>
+                        <input type="text" name="tags" id="tags">
+                        <label for="">- Tags (seperate by ", ")</label>
                     </div>
                     <button>Save Song</button>
                 </form>
             </section>
 
             <section id="filter">
-                <div id="filterDropdown"></div>
-                <div id="filterText"></div>
-                <div id="activeFilters"></div>
+                <div id="filterDropdown">
+                    <label for="filterField">Filter by</label>
+                    <select id="filterField" name="filterField">
+                        <option value="all">All Fields</option>
+                        <option value="artist">Artist</option>
+                        <option value="name">Song Name</option>
+                        <option value="featured">Featured Artist</option>
+                        <option value="coverArtist">Cover Artist</option>
+                        <option value="notesOther">Notes</option>
+                        <option value="tags">Tags</option>
+                    </select>
+                </div>
+                <div id="filterText">
+                    <input type="text">
+                    <button>Filter</button>
+                </div>
+                <div id="activeFilters">
+                    <p>Active Filters:</p>
+                    <section id="activeFilters"></section>
+                </div>
             </section>
 
-            <section id="list"></section>
+            <section id="list">
+
+                <div class="row">
+                    <section class="visual">
+                        <img src="" alt="song-represented or album image">
+                    </section>
+                    <section class="dataEntry">
+                        <p>{artist}</p>
+                        <p>- {name}</p>
+                        <p>(ft. {secondary artist})</p>
+                        <p>({cover artist remix})</p>
+                        <p>[note]</p>
+                        <p>"{tag} {tag} {tag}"</p>
+                    </section>
+                    <section class="permanentDelete">
+                        <button class="delete">x</button>
+                    </section>
+                </div>
+
+            </section>
 
         </div>
 
-        <button id="toggleDelete"></button>
+        <div id="toggle">
+            <p>WARNING - Toggle songs to be deleted from your list ></p>
+            <button id="toggleDelete">x</button>
+        </div>
         
     </main>
     <footer></footer>
