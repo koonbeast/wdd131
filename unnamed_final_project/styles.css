@@ -3,6 +3,7 @@
     --secondary-border-color: rgba(0, 0, 0, 0.753);
     --primary-color: #633a4e;
     --text-color: rgb(224, 224, 224);
+    --delete-color: darkred
 }
 
 * {
@@ -72,6 +73,15 @@ form div {
     box-shadow: 0 0 4px black;
 }
 
+#activeFiltersDisplayed button {
+    padding: 2px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#activeFiltersDisplayed button:last-child {
+    margin-right: 0;
+}
+
 #list {
     border: solid var(--border-color);
     box-shadow: 0 0 0 4px var(--secondary-border-color);
@@ -81,6 +91,10 @@ form div {
 
 #list img {
     color: transparent;
+}
+
+#list.deleteMode .delete{
+    background-color: var(--delete-color);
 }
 
 .visual img {
@@ -136,7 +150,7 @@ form div {
 
 #toggle button {
     padding: 2px 8px;
-    background-color: darkred;
+    background-color: var(--delete-color);
 }
 
 footer {
