@@ -22,10 +22,26 @@ body {
 }
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: solid var(--border-color);
     box-shadow: 0 0 0 4px var(--secondary-border-color);
     padding: .5rem;
     margin-bottom: 10px;
+}
+
+.logoContainer {
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.logoContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #songInput {
@@ -73,7 +89,12 @@ form div {
     box-shadow: 0 0 4px black;
 }
 
+#filterText input {
+    background-color: var(--secondary-border-color);
+}
+
 #activeFiltersDisplayed button {
+    background-color: var(--delete-color);
     padding: 2px;
     margin-top: 10px;
     margin-right: 10px;

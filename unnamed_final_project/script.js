@@ -79,13 +79,36 @@ filterButton.addEventListener("click", (event) => {
 	});
 	filteredSongs.sort(sortSongsByArtist); // should sort the list by using the function
 
-	const allRows = songList.querySelectorAll(".row"); // fixed code block, supposed to check which rows the match the filter
-		allRows.forEach(row => {
-			const rowText = row.textContent.toLowerCase();
-			const matches = rowText.includes(searchText);
+	// const allRows = songList.querySelectorAll(".row"); // fixed code block, supposed to check which rows the match the filter
+	// 	allRows.forEach(row => {
+	// 		const rowText = row.textContent.toLowerCase();
+	// 		const matches = rowText.includes(searchText);
 			
-			row.style.display = matches ? "flex" : "none";
-		});
+	// 		row.style.display = matches ? "flex" : "none";
+	// 	});
+// Replaced with below
+	
+// AI rewrote this block to handle filter selection, too difficult for me to comprehend to make alone, but I understand what the code is doing specifically
+	const allRows = songList.querySelectorAll(".row");
+	allRows.forEach(row => {
+		let fieldValue = row.textContent.toLowerCase(); // default whole row
+		
+		// Respect selected field when possible
+		if (selectedField !== "all") {
+			// Try to find the right <p> based on order (artist, name, featured, etc.)
+			const dataPs = row.querySelectorAll(".dataEntry p");
+			if (dataPs.length > 0) {
+				const fieldIndex = getFieldIndex(selectedField);
+				if (fieldIndex !== -1 && dataPs[fieldIndex]) {
+					fieldValue = dataPs[fieldIndex].textContent.toLowerCase();
+				}
+			}
+		}
+		
+		const matches = fieldValue.includes(searchText);
+		row.style.display = matches ? "flex" : "none";
+	});
+// AI end
 });
 
 function sortSongsByArtist(a, b) {
@@ -98,6 +121,17 @@ function sortSongsByArtist(a, b) {
 	else {
 		return 0
 	}
+}
+function getFieldIndex(field) { // AI added helper function
+    const mapping = {
+        "artist": 0,
+        "name": 1,
+        "featured": 2,
+        "coverArtist": 3,
+        "notesOther": 4,
+        "tags": 5
+    };
+    return mapping[field] !== undefined ? mapping[field] : -1;
 }
 function applyFilters() { // helped with reapplying filters when removing a filter
 	const activeFiltersButtons = activeFilters.querySelectorAll("button");
